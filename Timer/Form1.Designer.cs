@@ -66,6 +66,7 @@
             // Timer
             // 
             this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Form1
             // 
@@ -79,7 +80,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "타이머";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
